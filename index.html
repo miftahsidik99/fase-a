@@ -62,31 +62,39 @@
             background-color: #007B9A;
         }
         
-        #homeButton {
-            background-color: #f44336;
+        .btn-home {
+            display: block;
+            width: 100%;
+            padding: 12px;
             margin-bottom: 20px;
+            background-color: #007bff;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            font-size: 16px;
+            font-weight: bold;
+            text-align: center;
+            text-decoration: none;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
         }
-        
-        #homeButton:hover {
-            background-color: #d32f2f;
-        }
-    <style>
-    .btn-home {
-        background-color: #007bff;
-        border: 2px solid #ffffff;
-        box-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
-    }
 
-    .btn-home:hover {
-        background-color: #0056b3;
-        transform: scale(1.05) rotate(2deg);
-    }
-</style>
+        .btn-home:hover {
+            background-color: #0056b3;
+            transform: translateY(-2px);
+            box-shadow: 0 6px 8px rgba(0, 0, 0, 0.15);
+        }
+
+        .btn-home:active {
+            transform: translateY(0);
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+    </style>
 </head>
 
 <body>
     <div id="sidebar">
-        <a href="https://miftahsidik99.github.io/home-web/" class="btn">Home</a>
+        <a href="https://miftahsidik99.github.io/home-web/" class="btn-home">Home</a>
         <button onclick="loadDoc('https://docs.google.com/document/d/15X0zSqh8-14aGY2StIz-wEo6PTC8kfJ6u43r8kAO2Gs/edit?usp=sharing')">CP Bahasa Indonesia FASE A</button>
         <button onclick="loadDoc('https://docs.google.com/document/d/16Xjw6QWgwdewCwFWCq-DIf_FH1eKZcM4PkPvFj5N3Pc/edit?usp=sharing')">CP Pendidikan Pancasila FASE A</button>
         <button onclick="loadDoc('https://docs.google.com/document/d/1FHtXVpR_E5gWg9I2Sw1oPwj4NLjQeXdU__6JeWF_uNc/edit?usp=sharing')">CP Matematika FASE A</button>
